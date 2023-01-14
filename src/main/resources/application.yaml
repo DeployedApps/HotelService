@@ -1,12 +1,4 @@
 ---
-info:
-  component: This is document server
-  title: This is title
-  summary: this is summary
-  description: This is description
-
-# spring:
-#   profiles: default
 server:
   port: 8082
   contextPath: /swagger-ui.html
