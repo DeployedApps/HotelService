@@ -10,10 +10,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@ApiOperation("These Are Hotels API in OpenApi3 Format")
-@OpenAPIDefinition(info = @Info(title = "This Hotel API Microservices", version = "3.0", summary="It is prepared with Kjava 17, spring version 2.7.7 enabled with EUREKA SERVER, CONFIG-SERVER,API-GATWAY, DOCUMENT SERVER & SPING SECURITY with OKTA AUTH",description = "It contains Hotel Information along with ratings & other criteria. API is powered by salient features of Spring Boot e.g. resilence4j, ratelimiters, circuitbreakers" +
+@OpenAPIDefinition(info = @Info(title = "This Hotel API Microservices", version = "3.0", description = "It contains Hotel Information along with ratings & other criteria. API is powered by salient features of Spring Boot e.g. resilence4j, ratelimiters, circuitbreakers" +
 		"and further to specify by Feign client. The api will be being consumed by Rating Services Api & finally Hotel Services API. It is already registered on Eurka server " +
 		"https://serviceregitsry-production.up.railway.app/ whereas planned to be protected by Okta Auth & JWT"))
+@ApiOperation("It is prepared with java 17, spring version 2.7.7 enabled with EUREKA SERVER, CONFIG-SERVER,API-GATWAY, DOCUMENT SERVER & SPING SECURITY with OKTA AUTH")
 public class HotelServiceApplication {
 
 	public static void main(String[] args) {
