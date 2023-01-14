@@ -1,6 +1,9 @@
 server:
   port: 8082
   contextPath: /swagger-ui.html
+nfo:
+  title: "This is a HOTEL-SERVICE API Sevrer."
+  description: "This is used create HOTEL & ratings for the Hotel"
 
 spring:
   application:
