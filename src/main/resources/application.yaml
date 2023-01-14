@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: HOTEL-SERVICE
+    name: https://hotelservice-stage.up.railway.app/swagger-ui/index.html
   # config:
   #   import: optional:configserver:http://localhost:8085
   jpa:
