@@ -1,18 +1,31 @@
 server:
   port: 8082
+  contextPath: /swagger-ui.html
 
 spring:
   application:
     name: HOTEL-SERVICE
-  config:
-    import: optional:configserver:http://localhost:8085
+  # config:
+  #   import: optional:configserver:http://localhost:8085
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
   show-sql: true
   datasource:
-    url: jdbc:postgresql://localhost:5551/Hotel
-    username: Hotel
-    password: Hotel
+    url: jdbc:postgresql://containers-us-west-164.railway.app:6485/railway
+    username: postgres
+    password: Z8ue7zkFFMqz6aWsGolM
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 30
+    refresh:
+      enable: true
+    service-url:
+      defaultZone:  https://serviceregitsry-production.up.railway.app/eureka
 
